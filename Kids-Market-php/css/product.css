@@ -1,0 +1,354 @@
+*{
+    text-decoration: none;
+    text-transform:capitalize ;
+  }
+  body {
+    background-image: url(../pic/newpic/888.jpg);
+  }
+  .list-group-item:hover{
+    background-color: pink;
+  }
+  .percent{
+    color: blue;
+    cursor: pointer;
+  }
+  .fa-heart{
+    color: red;
+    cursor: pointer;
+  }
+  h6{
+    padding: 5px;
+  }
+  .ratings{
+    color: yellow;
+  }
+  .ratings span{
+    color: black;
+    cursor: pointer;
+  }
+  .product-detail-container{
+    background-color: rgb(254 165 147 / 50%);
+  }
+.heading{
+    text-align: center;
+    font-size: 4rem;
+    color: #333;
+    padding: 1rem;
+    margin: 2rem 0 ;
+    background:lightgray ;
+}
+
+header{
+    position: sticky;
+    top: 0;
+    left: 0;
+    right: 0;
+    background:#f8f4ef;
+    padding: 1rem 5%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,1);
+}
+header .logo{
+    font-size: 2rem;
+    color: beige;
+    font-weight: bolder;   
+}
+header .logo span{
+    color: rgb(236, 67, 67);
+}
+header .navbar a{
+    font-size: 16px;
+    padding: 0 1.5rem;
+    color: black;
+text-decoration: none;
+}
+.home .content h3{
+    font-size: 5rem;
+}
+.home .content span{
+    font-size: 5rem;
+}
+header .navbar a:hover{
+    color: burlywood;
+}
+header .icon a{
+    font-size: 1rem;
+    color: #333;
+    
+}
+header .icon a:hover{
+    color: burlywood;
+}
+
+header .navbar a.active{
+    background-color:#f8f4ef;
+    color: burlywood;
+}
+header #toggler{
+    display:none;
+}
+header .fa-bars{
+    font-size:3rem;
+    color:#333;
+    border-radius: 5rem;
+    padding: 5rem 1.5rem;
+    cursor: pointer;
+    display: none;
+}
+/* section product */
+.box-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
+.product .box-container .box{
+    flex: 1 1 30rem;
+    box-shadow: 0.5rem 1rem rgb(37, 37, 37);
+    border-radius: .5rem;
+    border: 1px solid rgb(32, 30, 30);
+    position: relative;
+}
+.product .box-container .box .image{
+    position: relative;
+    text-align: center;
+    padding-top: 2rem;
+    overflow: hidden;
+}
+.product .box-container .box .image img{
+    height: 20rem;
+}
+.product .box-container .box:hover .image img{
+    transform: scale(1.2);
+}
+.product .box-container .box .image .icon{
+    position: absolute;
+    bottom:-7rem; left: 0; right: 0;
+    display: flex;
+}
+.product .box-container .box:hover .image .icon{
+bottom: 0;
+}
+.product .box-container .box .image .icon a{
+    height: 5rem;
+    line-height: 5rem;
+    font-size: 2rem;
+    width: 50%;
+    background: rgba(73, 38, 38, 0.788) ;
+    color: white;
+}
+.product .box-container .box .image .icon a:hover{
+    background:#333 ;
+}
+.product .box-container .box .image .icon .shopping-cart{
+    border-left: 1rem solid #fff7;
+    border-right: 1rem solid #fff7;
+    width: 100%;
+}
+.product .box-container .box .content{
+    padding: 2rem;
+    text-align: center;
+}
+.product .box-container .box .content h3{
+    font-size: 2rem;
+    color: rgba(73, 38, 38, 0.788);
+}
+.product .box-container .box .content .price{
+    font-size: 1.5rem;
+    color:rgba(73, 38, 38, 0.788);
+    font-weight: bolder;
+    padding-top: 2px;
+}
+.product .box-container .box .content .price span{
+    font-size: 1.5rem;
+    color:#999;
+    font-weight: lighter;
+    text-decoration: line-through;
+}
+.footer{
+    background: #111;
+    height: auto;
+    width: 100%;
+    padding-top: 10px;
+    color: #fff;
+}
+.footer-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+.footer-content h3{
+    font-size: 2.1rem;
+    font-weight: 500;
+    line-height: 3rem;
+}
+.footer-content p{
+    max-width: 500px;
+    margin: 10px auto;
+    line-height: 28px;
+    font-size: 14px;
+    color: #cacdd2;
+}
+.socials{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem 0 3rem 0;
+}
+.socials li{
+    margin: 0 10px;
+}
+.socials a{
+    text-decoration: none;
+    color: #fff;
+    padding: 5px;
+
+
+}
+.socials a i{
+    font-size: 1.1rem;
+    width: 20px;
+
+
+    transition: color .4s ease;
+
+}
+.socials a:hover i{
+    color: black;
+    border-radius: 50%;
+    padding: 5px 1%;
+    
+    background-color: white;
+}
+.footer-bottom{
+    background: #000;
+    width: 100%;
+    padding: 20px;
+padding-bottom: 40px;
+    text-align: center;
+}
+.footer-bottom p{
+float: left;
+    font-size: 14px;
+    word-spacing: 2px;
+    text-transform: capitalize;
+}
+.footer-bottom p a{
+  color:#ffff;
+  font-size: 16px;
+  text-decoration: none;
+}
+.footer-bottom span{
+    text-transform: uppercase;
+    opacity: .4;
+    font-weight: 200;
+}
+.footer-menu{
+  float: right;
+
+}
+.footer-menu ul{
+  display: flex;
+}
+.footer-menu ul li{
+padding-right: 10px;
+display: block;
+}
+.footer-menu ul li a{
+  color: #cfd2d6;
+  text-decoration: none;
+}
+.footer-menu ul li a:hover{
+  color: white;
+}
+
+@media(max-width:991px){
+    html{
+        font-size: 40%;
+    }
+    header{
+    padding: 1rem 8%;
+}
+section{
+    padding: 2rem;
+}
+.home{
+    background-position: left;
+}
+.icon-container{
+    display: flex;
+    flex-wrap:wrap;
+}
+}
+@media(max-width:750px){
+    header{
+        font-size: 30%;
+    }
+    header .fa-bars{
+        display: block;
+    }
+    header .navbar{
+        position: absolute;
+        top: 100%;
+        left: 0%;
+        right: 0%;
+        background: #eee;
+        border-top: 1rem solid rgba(0,0,0,1);
+        clip-path: polygon(0 0,100% 0,100% 0, 0 0);
+    }
+    header #toggler:checked ~ .navbar{
+    clip-path: polygon(0 0,100% 0,100% 100%,0% 100%);
+    }
+    header .navbar a{
+        margin: 1.5rem;
+        padding: 1.5rem;
+        background: #fff;
+        border: rgba(0,0,0,1);
+        display: block;
+    }
+    .home .content h3{
+        font-size: 5rem;
+    }
+    .home .content span{
+        font-size: 2.5rem;
+    }
+    .icon-container .icon h3{
+        font-size: 2rem;
+    }
+    .icon-container .icon span{
+        font-size: 1.7rem;
+    }
+
+    
+
+}
+
+@media (max-width:500px) {
+    .footer-menu ul{
+      display: flex;
+      margin-top: 10px;
+      margin-bottom: 20px;
+    }
+    @media(max-width: 416px){
+        html{
+            font-size: 30%;
+        }   
+        header{
+            display: flex;
+            flex-direction: column;
+    
+        }
+        header .fa-bars{
+            padding: 1rem 1.5rem;
+        }
+        header .icon a{
+            font-size: 2rem;
+            padding: 10px;
+        }
+    }
+}
